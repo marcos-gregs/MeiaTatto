@@ -435,8 +435,8 @@ export default class CalendarAplication {
           // Create Row
           let getRow = document.getElementById(`${element}`)
           let CreateRow = document.createElement('td')
-          CreateRow.className = Dinamic_class_name
-          CreateRow.style.border ='solid';
+          CreateRow.className =`${Dinamic_class_name} table-row`
+          
           getRow.appendChild(CreateRow)
         })
         getDiv.appendChild(CreateColunm)

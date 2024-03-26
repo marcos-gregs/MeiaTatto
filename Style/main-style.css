@@ -1,5 +1,32 @@
 .Main-Section{
     position: relative;
-    width: 100%;
+    width: 100vw;
     display: flex;
+    
+}
+#mainMenu{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+.left-table{
+    width: 10vw;
+}
+.rigth-table{
+    padding-left: 2%;
+    
+}
+.hours{
+    height: 5vh;
+    width: 10vw;
+}
+.table-row{
+    height: 5vh;
+    width: 20vw;
+    text-align: center;
+}
+.calendarEvent{
+    
+    overflow-y: scroll;
+    width: 100%;
 }
