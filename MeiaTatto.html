@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+                              
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> 
+    <!-- Style  -->
+    <link rel="stylesheet" href="./Style/left-menu.css">
+    <link rel="stylesheet" href="./Style/main-style.css">
+    <title>Meia Tatto</title>
+</head>
+<body >
+    <header>
+      
+      <div>
+        <button id="content-Btn-menu">
+          content-Btn-menu
+        </button>  
+        
+        <img src="./imgs/363893576_1487324005348519_7529357220434089600_n (1).jpg" alt="">
+      </div>
+      
+      <div class="content-Monthdate">
+        <div class="btn-calendarEvent">
+          <button class="btn-calendarEventAfter"> < </button>
+          <button class="btn-calendarEventNext">></button>
+        
+        </div>
+        <div id="DateLoad">
+          <h1 class="text-Dateload"></h1>
+        </div>
+      </div>
+    </header>
+    <main class="Main-Section">
+        <!-- Formn -->
+        <section id="left-menu">
+            <div class="Cad_client">
+            
+                <h3>Cadastro de cliente:</h3>
+        
+     
+                <div class="Cad-client-info">
+
+                                        <!-- Cad-name -->
+                  <div class="field">
+                    <label class="label">Nome:</label>
+                    <div class="control has-icons-left has-icons-right">
+                      <input id="Client_name" class="input is-success" type="text" placeholder="Text input" value="bulma">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                      </span>
+                      <span class="icon is-small is-right">
+                        <i class="fas fa-check"></i>
+                      </span>
+                    </div>
+                    
+                  </div>
+                                        <!-- Cad-contato -->
+                  <div class="field">
+                    <label class="label">Contato</label>
+                    <div class="control has-icons-left has-icons-right">
+                      <input id="Client_contact" class="input is-danger" type="tel" maxlength="15" placeholder="(11)99999-6666">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                      </span>
+                      <span class="icon is-small is-right">
+                        <i class="fas fa-exclamation-triangle"></i>
+                      </span>
+                    </div>
+                  </div>
+                                        <!-- Cad-idade -->
+                   <div class="field">
+                    <label class="label">Idade</label>
+                    <div class="control has-icons-left has-icons-right">
+                      <input id="Client_age" class="input is-danger" type="number" maxlength="2" >
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                      </span>
+                      <span class="icon is-small is-right">
+                        <i class="fas fa-exclamation-triangle"></i>
+                      </span>
+                    </div>
+                  </div>
+                  
+                                        <!-- Cad-envio  -->
+                  <div class="field is-grouped">
+                    <div class="control">
+                      <button id="Client_send" class="button is-link">Submit</button>
+                    </div>
+                  </div>
+
+                </div>
+            </div>
+            
+                                    
+            <div class="Cad_services">
+                
+                <h2 class="label">Agendamento.</h2>
+        
+                <div class="Cad_services-form">
+                                        <!-- Cad_service-nome  -->
+                    <label class="label" for="Services_name">Nome:</label>
+                    <input  type="text" class="input" id="Services_name">
+                                        <!-- Cad_service-contato  -->
+                    <label  class="label" for="Services_contact">Contato:</label>
+                    <input type="tel" class="input" id="Services_contact">
+                                        <!-- Cad_service-data  -->
+                    <label class="label" for="Services_date">Data:</label>
+                    <input type="date" class="input" id="Services_date">
+                                        <!-- Cad_service-horas  -->
+                    <label class="label" for="Services_hours" >Horário:</label>
+                    <input type="time" class="input" id="Services_hours">
+                                        <!-- Cad_service-serviços  -->
+                    <label class="label" for="Services_TipService">Serviço:</label>
+                    <div class="control">
+                        <div class="select">
+                          <select id="Services_TipService">
+                            <option value="Tatto">Tatto</option>
+                            <option value="Piercing ">Piercing</option>
+                          </select>
+                        </div>
+                    </div>   
+                                        <!-- Cad_service-valor  -->
+                    <label class="label" for="Services_value">Valor:</label>
+                    <input type="text" class="input" id="Services_value">
+                
+                </div>
+                                        <!-- Cad_service-envio  -->
+                <div class="field is-grouped">
+                    <div class="control">
+                      <button id="Services_send" class="button is-link">Submit</button>
+                    </div>
+                </div>
+                
+                
+       
+            </div>
+        </section>
+        <section id="mainMenu">
+          <table class="calendarEvent">
+            <tr class="TableDay">
+              <th>
+                Horas
+              </th>
+            </tr>
+            <tr id ="08-hours">
+              <td>
+                08:00
+              </td>
+
+            </tr>
+            <tr id ="09-hours">
+              <td>
+                09:00
+              </td>
+            </tr>
+            <tr id ="10-hours">
+              <td>
+                10:00
+              </td>
+            </tr>
+            <tr id ="11-hours">
+              <td>
+                11:00
+              </td>
+            </tr>
+            <tr id ="12-hours">
+              <td>
+                12:00
+              </td>
+            </tr>
+            <tr id ="13-hours">
+              <td>
+                13:00
+              </td>
+            </tr>
+            <tr id ="14-hours" >
+              <td>
+                14:00
+              </td>
+            </tr>
+            <tr id ="15-hours">
+              <td>
+                15:00
+              </td>
+            </tr>
+            <tr id ="16-hours">
+              <td>
+                16:00
+              </td>
+            </tr>
+            <tr id ="17-hours">
+              <td>
+                17:00
+              </td>
+            </tr>
+            <tr id ="18-hours">
+              <td>
+                18:00
+              </td>
+            </tr>
+            <tr id ="19-hours">
+              <td>
+                19:00
+              </td>
+            </tr>
+            <tr id ="20-hours" >
+              <td>
+                20:00
+              </td>
+            </tr>
+            <tr id ="21-hours">
+              <td>
+                21:00
+              </td>
+            </tr>
+
+          </table>
+        </section>
+     
+
+    </main>
+  
+      <script type="module" src="./Assets/mainActivity.js"></script>
+</body>
+</html>

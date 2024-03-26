@@ -1,0 +1,18 @@
+{
+  "name": "meiatatto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "json-server": "json-server --watch db.json"
+  },
+  "author": "Marcos Gregorio Vieira",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "express": "^4.18.3",
+    "fullcalendar-scheduler": "^6.1.11",
+    "json-server": "^1.0.0-alpha.23"
+  }
+}

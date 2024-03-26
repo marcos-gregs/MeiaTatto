@@ -1,0 +1,29 @@
+{
+  "client": [
+    {
+      "id": "5b5d",
+      "Nome": "bulma",
+      "Contato": "12",
+      "Idade": "(89) 898 - 9898",
+      "Historico": []
+    },
+    {
+      "id": "7a33",
+      "Nome": "bulma",
+      "Contato": "(12) 321 - 2321",
+      "Idade": "12",
+      "Historico": []
+    }
+  ],
+  "services": [
+    {
+      "id": "a139",
+      "nome": "MARCOS GREGORIO VIEIRA",
+      "contact": "qweqw",
+      "date": "2024-03-14",
+      "hours": "02:46",
+      "value": "213214",
+      "tipServices": "Tatto"
+    }
+  ]
+}
