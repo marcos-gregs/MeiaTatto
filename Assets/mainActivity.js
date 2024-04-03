@@ -59,6 +59,7 @@ let novaData = new CalendarAplication();
 novaData.CallProp()
 novaData.respawnMonthYear('DateLoad','text-Dateload');
 novaData.respawnCalendar('TableDay',dinamic_class_hours)
+novaData.respawnMonthModal('modalCalendar','TableDay',dinamic_class_hours,`father-element`,'text-Dateload')
 
 
     

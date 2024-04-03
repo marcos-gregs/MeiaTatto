@@ -7,29 +7,46 @@
                               
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> 
     <!-- Style  -->
-    <link rel="stylesheet" href="./Style/left-menu.css">
     <link rel="stylesheet" href="./Style/main-style.css">
     <title>Meia Tatto</title>
 </head>
 <body >
-    <header>
+    <header class="Main-Menu">
       
-      <div>
-        <button id="content-Btn-menu">
+      <div class="content-Btn-menu">
+        <button id="Btn-menu">
           content-Btn-menu
         </button>  
-        
-        <img src="./imgs/363893576_1487324005348519_7529357220434089600_n (1).jpg" alt="">
       </div>
+      <img src="./imgs/363893576_1487324005348519_7529357220434089600_n (1).jpg" alt="">
       
-      <div class="content-Monthdate">
+      <div class="content-Month-date">
         <div class="btn-calendarEvent">
-          <button class="btn-calendarEventAfter"> < </button>
-          <button class="btn-calendarEventNext">></button>
+          <button class="btn-calendarEventAfter"> <i class="fa-solid fa-chevron-left"></i> </button>
+          <button class="btn-calendarEventNext"><i class="fa-solid fa-chevron-right"></i></button>
         
         </div>
         <div id="DateLoad">
-          <h1 class="text-Dateload"></h1>
+         
+          
+          <button class="js-modal-trigger" data-target="modal-js-example">
+            <i class="fa-solid fa-calendar-week"></i>
+          </button>
+          <div id="modal-js-example" class="modal">
+            <div class="modal-background"></div>
+          
+            <div class="modal-content">
+              <div class="box">
+                <div id="modalCalendar">
+                  s
+                </div>
+               
+                <!-- Your content -->
+              </div>
+            </div>
+          
+            <button class="modal-close is-large" aria-label="close"></button>
+          </div>
         </div>
       </div>
     </header>
@@ -38,7 +55,7 @@
         <section id="left-menu">
             <div class="Cad_client">
             
-                <h3>Cadastro de cliente:</h3>
+                <h3 class="label">Cadastro de cliente:</h3>
         
      
                 <div class="Cad-client-info">
@@ -139,91 +156,92 @@
             </div>
         </section>
         <section id="mainMenu">
+
           <div class="left-table">
-              <table >
-                <tr class="TableDayHours">
+              <table class="contentTableDayHours is-narrow ">
+                <tr class="TableDayHours table is-narrow">
                   <th>
                     Horas
                   </th>
                 </tr>
-                <tr class ="hours">
+                <tr class ="hours table is-narrow">
                   <td>
                     08:00
                   </td>
     
                 </tr>
-                <tr class ="hours">
+                <tr class ="hours table is-narrow">
                   <td>
                     09:00
                   </td>
                 </tr>
-                <tr class ="hours">
+                <tr class ="hours table is-narrow">
                   <td>
                     10:00
                   </td>
                 </tr>
-                <tr class ="hours">
+                <tr class ="hours table is-narrow">
                   <td>
                     11:00
                   </td>
                 </tr>
-                <tr class ="hours">
+                <tr class ="hours table is-narrow">
                   <td>
                     12:00
                   </td>
                 </tr>
-                <tr class ="hours">
+                <tr class ="hours table is-narrow">
                   <td>
                     13:00
                   </td>
                 </tr>
-                <tr class ="hours" >
+                <tr class ="hours table is-narrow" >
                   <td>
                     14:00
                   </td>
                 </tr>
-                <tr class ="hours">
+                <tr class ="hours table is-narrow">
                   <td>
                     15:00
                   </td>
                 </tr>
-                <tr class ="hours">
+                <tr class ="hours table is-narrow">
                   <td>
                     16:00
                   </td>
                 </tr>
-                <tr class ="hours">
+                <tr class ="hours table is-narrow">
                   <td>
                     17:00
                   </td>
                 </tr>
-                <tr class ="hours">
+                <tr class ="hours table is-narrow">
                   <td>
                     18:00
                   </td>
                 </tr>
-                <tr class ="hours">
+                <tr class ="hours table is-narrow">
                   <td>
                     19:00
                   </td>
                 </tr>
-                <tr class ="hours" >
+                <tr class ="hours table is-narrow" >
                   <td>
                     20:00
                   </td>
                 </tr>
-                <tr class ="hours">
+                <tr class ="hours table is-narrow">
                   <td>
                     21:00
                   </td>
                 </tr>
        
-              </table>
-            
+              </table>  
           </div>
           <div class="rigth-table">
             <table class="calendarEvent">
-              <tr class="TableDay">
+             
+              <tr id="father-element" class="TableDay">
                 
               </tr>
               <tr id ="08-hours">
@@ -269,6 +287,8 @@
               <tr id ="21-hours">
                 
               </tr>
+              
+        
   
             </table>
           </div>
@@ -276,7 +296,8 @@
      
 
     </main>
-  
+     <script src="https://kit.fontawesome.com/4b0c82d663.js" crossorigin="anonymous"></script>
+      <script src="./Assets/ClassSystem/FrameworksSystem/modalConfig.js"></script>
       <script type="module" src="./Assets/mainActivity.js"></script>
 </body>
 </html>

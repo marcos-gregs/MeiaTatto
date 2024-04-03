@@ -1,32 +1,107 @@
+.Main-Menu{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+}
+.content-Month-date{
+    width: 25vw;
+    display: flex;
+    padding-top: 2.5%;
+    font-size: 2rem;
+    
+}
+
+.content-Btn-menu{
+    padding-top: 2.5%;     
+}
+.content-Btn-menu>button{
+    width: 50%;
+    cursor: pointer;
+}
+.btn-calendarEvent{
+    width: 40%;
+}
+
+.btn-calendarEvent>button{
+    width: 30%;
+    height: 40%;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.2rem;
+
+}
+#DateLoad{
+    text-align: center;
+    width: 80%;
+    height: 8vh;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.text-Dateload{
+    margin-top: 2%;
+}
+#DateLoad>button{
+    width:25%;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 5%;
+    font-size: 2rem;
+
+}
+/* Main section:
+        Form,Tabela do calendario. */
 .Main-Section{
     position: relative;
-    width: 100vw;
+    width: 500vw;
     display: flex;
     
 }
 #mainMenu{
     width: 100vw;
+    height: 80vh;
     display: flex;
     flex-direction: row;
+    
 }
+/* Tabela */
+
+/* Tabela do Form */
+
+
+/* Tabela do mês */
 .left-table{
-    width: 10vw;
+    width: 20vw;
+}
+.contentTableDayHours{
+    width: 100%;
 }
 .rigth-table{
-    padding-left: 2%;
+    max-width: 100%;
+    overflow:scroll;
+    padding-left: .5%;
+    border: solid;
     
 }
 .hours{
     height: 5vh;
     width: 10vw;
-}
-.table-row{
-    height: 5vh;
-    width: 20vw;
     text-align: center;
+    font-size: 20.5px;
+}
+.row-table{
+    height: 5vh;
+    width: 30vw;
+    text-align: center;
+    border-style: solid; 
+    border-width: .5px;
+    overflow: hidden;
 }
 .calendarEvent{
-    
-    overflow-y: scroll;
-    width: 100%;
+     width: 203vw;
+}
+#left-menu{
+display: none;
 }
