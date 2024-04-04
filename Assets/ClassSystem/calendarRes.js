@@ -399,7 +399,9 @@ export default class CalendarAplication {
               ],
         }
     }
-    
+    testDate(){
+      console.log(this.newDate)
+    }
     CallProp(){
       const months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Augosto", "Setembro", "Outuber", "Novembro", "Dezembro"];  this.date = this.newDate.getDate();
       let hours = `${this.newDate.getHours()}:${this.newDate.getMinutes()}`
@@ -438,8 +440,11 @@ export default class CalendarAplication {
           let getRow = document.getElementById(`${element}`)
           let CreateRow = document.createElement('td')
           CreateRow.className =`${Dinamic_class_name} row-table remove-row`
-         
-
+          let createButtomModal =  document.createElement('button')
+          createButtomModal.className ='js-modal-trigger'
+          createButtomModal.textContent='+'
+          createButtomModal.dataset.target = 'modal-js'
+          CreateRow.append(createButtomModal)
           
           getRow.appendChild(CreateRow)
         })
